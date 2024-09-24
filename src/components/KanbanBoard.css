@@ -1,0 +1,118 @@
+.kanban-board {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #F4F5F8;
+    font-size: 12px;
+    gap: 18px;
+    overflow-y: auto;
+}
+
+.kanban-column {
+    flex: 0 0 auto;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanban-card {
+    background-color: white !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    width: 225px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 0 5px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.column-header h5 {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.card-count {
+    font-size: 11px;
+    color: #888;
+    margin-left: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-right img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.kanban-card h3 {
+    color: rgb(61, 58, 58);
+    font-size: 12px;
+    margin: 0 0 5px 0;
+}
+
+.kanban-card p {
+    font-size: 11px;
+    margin: 2px 0;
+}
+
+.icon-button img {
+    width: 12px;
+    height: 12px;
+}
+
+.header-user-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.user-profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.availability-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}

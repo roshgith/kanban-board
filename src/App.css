@@ -1,38 +1,48 @@
+
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.kanban-board {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.kanban-card {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: left;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.kanban-card:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .kanban-column {
+    width: 90%;
+    margin-bottom: 20px;
   }
+}
+
+:root {
+  --card-margin: 10px;
+  --card-padding: 15px;
 }
